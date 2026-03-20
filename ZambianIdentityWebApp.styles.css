@@ -1,6 +1,6 @@
-@import '../_content/CompanyApp.Component.GovernmentIndentityIssuer/CompanyApp.Component.GovernmentIndentityIssuer.b3tvm84b82.bundle.scp.css';
+@import '_content/CompanyApp.Component.GovernmentIndentityIssuer/CompanyApp.Component.GovernmentIndentityIssuer.b3tvm84b82.bundle.scp.css';
 
-/* ZambianIdentityWebApp/Layout/MainLayout.razor.rz.scp.css */
+/* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-zg745yyfb2] {
     position: relative;
     display: flex;
@@ -78,7 +78,7 @@ main[b-zg745yyfb2] {
         padding-right: 1.5rem !important;
     }
 }
-/* ZambianIdentityWebApp/Layout/NavMenu.razor.rz.scp.css */
+/* /Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-3j7ki96srj] {
     background-color: rgba(255, 255, 255, 0.1);
 }
