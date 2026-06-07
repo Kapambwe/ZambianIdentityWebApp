@@ -1,0 +1,33 @@
+{
+  "ServiceId": "death",
+  "ServiceName": "Death Certificate Registration",
+  "AgencyName": "Ministry of Home Affairs",
+  "Category": "Civil Registry",
+  "ApplicationFee": 10.00,
+  "Requirements": [
+    {
+      "Id": "medical_cert",
+      "Label": "Medical Certificate of Cause of Death",
+      "CredentialType": "MedicalDeathCertificate",
+      "IsMandatory": true,
+      "FieldMapping": ""
+    }
+  ],
+  "ReviewChecklist": [
+    "Verify medical practitioner signature",
+    "Confirm deceased NRC is valid",
+    "Validate cause of death report",
+    "Check for existing burial permits"
+  ],
+  "Sections": [
+    {
+      "Title": "Deceased Information",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "DeceasedName", "Type": 0, "IsRequired": true },
+        { "Label": "NRC Number", "BindingProperty": "DeceasedNRC", "Type": 0, "IsRequired": true },
+        { "Label": "Date of Death", "BindingProperty": "DateOfDeath", "Type": 2, "IsRequired": true },
+        { "Label": "Cause of Death", "BindingProperty": "CauseOfDeath", "Type": 0, "IsRequired": true }
+      ]
+    }
+  ]
+}

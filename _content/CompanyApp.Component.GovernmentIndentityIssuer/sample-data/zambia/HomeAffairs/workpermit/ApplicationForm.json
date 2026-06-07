@@ -1,0 +1,36 @@
+{
+  "ServiceId": "workpermit",
+  "ServiceName": "Employment Work Permit",
+  "AgencyName": "Department of Immigration",
+  "Category": "Immigration Services",
+  "ApplicationFee": 2000.00,
+  "Requirements": [
+    { "Id": "passport", "Label": "Passport Copy", "CredentialType": "Passport", "IsMandatory": true },
+    { "Id": "offer_letter", "Label": "Letter of Offer", "CredentialType": "EmploymentContract", "IsMandatory": true }
+  ],
+  "ReviewChecklist": [
+    "Verify employer legitimacy",
+    "Confirm job qualifications",
+    "Medical clearance check",
+    "Security background check"
+  ],
+  "Sections": [
+    {
+      "Title": "Worker Information",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "WorkerName", "Type": 0, "IsRequired": true },
+        { "Label": "Passport Number", "BindingProperty": "PassportNumber", "Type": 0, "IsRequired": true },
+        { "Label": "Nationality", "BindingProperty": "Nationality", "Type": 0, "IsRequired": true },
+        { "Label": "Job Title", "BindingProperty": "JobTitle", "Type": 0, "IsRequired": true }
+      ]
+    },
+    {
+      "Title": "Employer Information",
+      "Fields": [
+        { "Label": "Employer Name", "BindingProperty": "EmployerName", "Type": 0, "IsRequired": true },
+        { "Label": "Employer Address", "BindingProperty": "EmployerAddress", "Type": 4, "IsRequired": true },
+        { "Label": "Sector", "BindingProperty": "Sector", "Type": 3, "Options": ["Mining", "Agriculture", "IT", "Education", "Healthcare"], "IsRequired": true }
+      ]
+    }
+  ]
+}

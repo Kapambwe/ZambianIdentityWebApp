@@ -1,0 +1,33 @@
+{
+  "ServiceId": "visa",
+  "ServiceName": "Electronic Entry Visa (e-Visa)",
+  "AgencyName": "Immigration Department",
+  "Category": "Immigration",
+  "ApplicationFee": 50.00,
+  "Requirements": [
+    {
+      "Id": "passport",
+      "Label": "Valid International Passport",
+      "CredentialType": "Passport",
+      "IsMandatory": true,
+      "FieldMapping": "passport_no:PassportNumber"
+    }
+  ],
+  "ReviewChecklist": [
+    "Verify passport validity (>6 months)",
+    "Criminal record database check (Interpol)",
+    "Host verification / Hotel booking confirmation",
+    "Proof of sufficient funds check",
+    "Security interview (if required)"
+  ],
+  "Sections": [
+    {
+      "Title": "Travel Intent",
+      "Fields": [
+        { "Label": "Visa Category", "BindingProperty": "VisaType", "Type": 3, "IsRequired": true, "Options": ["Tourist", "Business", "Student", "Work", "Critical Skills"] },
+        { "Label": "Duration of Stay (Days)", "BindingProperty": "Duration", "Type": 1, "IsRequired": true },
+        { "Label": "Expected Entry Date", "BindingProperty": "EntryDate", "Type": 2, "IsRequired": true }
+      ]
+    }
+  ]
+}

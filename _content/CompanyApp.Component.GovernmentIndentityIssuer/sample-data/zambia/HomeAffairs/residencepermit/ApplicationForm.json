@@ -1,0 +1,27 @@
+{
+  "ServiceId": "residencepermit",
+  "ServiceName": "Permanent Residence Permit",
+  "AgencyName": "Department of Immigration",
+  "Category": "Immigration Services",
+  "ApplicationFee": 5000.00,
+  "Requirements": [
+    { "Id": "passport", "Label": "Passport Copy", "CredentialType": "Passport", "IsMandatory": true },
+    { "Id": "nrc_ref", "Label": "Zambian Reference NRC", "CredentialType": "NationalID", "IsMandatory": false }
+  ],
+  "ReviewChecklist": [
+    "Verify basis for residence",
+    "Confirm investment/employment",
+    "Security vetting",
+    "Address verification"
+  ],
+  "Sections": [
+    {
+      "Title": "Personal Details",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "HolderName", "Type": 0, "IsRequired": true },
+        { "Label": "Passport Number", "BindingProperty": "PassportNumber", "Type": 0, "IsRequired": true },
+        { "Label": "Basis for Residence", "BindingProperty": "BasisForResidence", "Type": 3, "Options": ["Investment", "Employment", "Marriage", "Retirement"], "IsRequired": true }
+      ]
+    }
+  ]
+}
