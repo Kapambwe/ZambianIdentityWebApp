@@ -1,0 +1,42 @@
+{
+  "ServiceId": "nrc",
+  "ServiceName": "National Registration Card (NRC) Issuance",
+  "AgencyName": "Department of National Registration, Passport and Citizenship",
+  "Category": "Identity",
+  "ApplicationFee": 20.00,
+  "Requirements": [
+    {
+      "Id": "birth_cert",
+      "Label": "Birth Certificate",
+      "CredentialType": "BirthCertificate",
+      "IsMandatory": true,
+      "FieldMapping": "name:FullName,dob:DateOfBirth"
+    }
+  ],
+  "ReviewChecklist": [
+    "Validate physical birth certificate",
+    "Verify village headman recommendation",
+    "Capture biometrics (Fingerprint/Face)",
+    "Security background check"
+  ],
+  "Sections": [
+    {
+      "Title": "Personal Details",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "FullName", "Type": 0, "IsRequired": true },
+        { "Label": "Date of Birth", "BindingProperty": "DateOfBirth", "Type": 2, "IsRequired": true },
+        { "Label": "Place of Birth", "BindingProperty": "PlaceOfBirth", "Type": 0, "IsRequired": true },
+        { "Label": "Gender", "BindingProperty": "Gender", "Type": 3, "IsRequired": true, "Options": ["Male", "Female"] }
+      ]
+    },
+    {
+      "Title": "Parental Information",
+      "Fields": [
+        { "Label": "Father's Full Name", "BindingProperty": "FatherName", "Type": 0, "IsRequired": true },
+        { "Label": "Father's NRC", "BindingProperty": "FatherNRC", "Type": 0, "IsRequired": true },
+        { "Label": "Mother's Full Name", "BindingProperty": "MotherName", "Type": 0, "IsRequired": true },
+        { "Label": "Mother's NRC", "BindingProperty": "MotherNRC", "Type": 0, "IsRequired": true }
+      ]
+    }
+  ]
+}

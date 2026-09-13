@@ -1,0 +1,21 @@
+{
+  "ServiceId": "driverslicense",
+  "ServiceName": "Driving License Application",
+  "AgencyName": "RTSA - Road Transport and Safety Agency",
+  "Category": "Transport Services",
+  "ApplicationFee": 250.00,
+  "Requirements": [
+    { "Id": "nrc", "Label": "National Registration Card", "CredentialType": "NationalID", "IsMandatory": true },
+    { "Id": "eye_test", "Label": "Eye Test Certificate", "CredentialType": "MedicalRecord", "IsMandatory": true }
+  ],
+  "Sections": [
+    {
+      "Title": "Driver Details",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "FullName", "Type": 0, "IsRequired": true },
+        { "Label": "NRC Number", "BindingProperty": "NRCNumber", "Type": 0, "IsRequired": true },
+        { "Label": "License Class", "BindingProperty": "LicenseClass", "Type": 3, "Options": ["A", "B", "C", "D", "CE", "PSV"], "IsRequired": true }
+      ]
+    }
+  ]
+}

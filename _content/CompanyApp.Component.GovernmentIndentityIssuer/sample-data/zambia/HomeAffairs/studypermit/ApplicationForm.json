@@ -1,0 +1,18 @@
+{
+  "ServiceId": "studypermit",
+  "ServiceName": "Study Permit Application",
+  "AgencyName": "Department of Immigration",
+  "Category": "Immigration Services",
+  "ApplicationFee": 500.00,
+  "Sections": [
+    {
+      "Title": "Student Information",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "FullName", "Type": 0, "IsRequired": true },
+        { "Label": "Passport Number", "BindingProperty": "PassportNumber", "Type": 0, "IsRequired": true },
+        { "Label": "Institution Name", "BindingProperty": "InstitutionName", "Type": 0, "IsRequired": true },
+        { "Label": "Course of Study", "BindingProperty": "CourseOfStudy", "Type": 0, "IsRequired": true }
+      ]
+    }
+  ]
+}

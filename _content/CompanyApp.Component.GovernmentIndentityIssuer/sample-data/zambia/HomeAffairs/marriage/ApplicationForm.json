@@ -1,0 +1,23 @@
+{
+  "ServiceId": "marriage",
+  "ServiceName": "Marriage Registration",
+  "AgencyName": "Department of National Registration, Passport and Citizenship",
+  "Category": "Civil Registry",
+  "ApplicationFee": 50.00,
+  "Sections": [
+    {
+      "Title": "Groom Details",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "GroomName", "Type": 0, "IsRequired": true },
+        { "Label": "NRC Number", "BindingProperty": "GroomNRC", "Type": 0, "IsRequired": true }
+      ]
+    },
+    {
+      "Title": "Bride Details",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "BrideName", "Type": 0, "IsRequired": true },
+        { "Label": "NRC Number", "BindingProperty": "BrideNRC", "Type": 0, "IsRequired": true }
+      ]
+    }
+  ]
+}

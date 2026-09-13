@@ -1,0 +1,23 @@
+{
+  "ServiceId": "divorce",
+  "ServiceName": "Divorce Registration",
+  "AgencyName": "Department of National Registration, Passport and Citizenship",
+  "Category": "Civil Registry",
+  "ApplicationFee": 100.00,
+  "Sections": [
+    {
+      "Title": "Husband Details",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "HusbandName", "Type": 0, "IsRequired": true },
+        { "Label": "NRC Number", "BindingProperty": "HusbandNRC", "Type": 0, "IsRequired": true }
+      ]
+    },
+    {
+      "Title": "Wife Details",
+      "Fields": [
+        { "Label": "Full Name", "BindingProperty": "WifeName", "Type": 0, "IsRequired": true },
+        { "Label": "NRC Number", "BindingProperty": "WifeNRC", "Type": 0, "IsRequired": true }
+      ]
+    }
+  ]
+}

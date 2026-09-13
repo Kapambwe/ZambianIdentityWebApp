@@ -1,0 +1,24 @@
+{
+  "ServiceId": "birth",
+  "ServiceName": "Birth Certificate Registration",
+  "AgencyName": "Ministry of Home Affairs",
+  "Category": "Civil Registry",
+  "ApplicationFee": 10.00,
+  "Requirements": [],
+  "ReviewChecklist": [
+    "Verify hospital birth record",
+    "Confirm informant identification",
+    "Validate parental details against NRC registry",
+    "Cross-check for dual registration"
+  ],
+  "Sections": [
+    {
+      "Title": "Child Details",
+      "Fields": [
+        { "Label": "Child's Full Name", "BindingProperty": "ChildName", "Type": 0, "IsRequired": true },
+        { "Label": "Date of Birth", "BindingProperty": "DateOfBirth", "Type": 2, "IsRequired": true },
+        { "Label": "Place of Birth (Hospital/Clinic)", "BindingProperty": "HospitalName", "Type": 0, "IsRequired": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "ServiceId": "passport",
+  "ServiceName": "Standard Digital Passport",
+  "AgencyName": "Department of National Registration, Passport and Citizenship",
+  "Category": "Travel Documents",
+  "ApplicationFee": 150.00,
+  "Requirements": [
+    {
+      "Id": "nrc",
+      "Label": "National Registration Card",
+      "CredentialType": "NationalID",
+      "IsMandatory": true,
+      "FieldMapping": "nrc:NRCNumber,name:FullName"
+    },
+    {
+      "Id": "birth_cert",
+      "Label": "Birth Certificate",
+      "CredentialType": "BirthCertificate",
+      "IsMandatory": true
+    }
+  ],
+  "ReviewChecklist": [
+    "Validate original NRC",
+    "Verify Birth Certificate authenticity",
+    "Security clearance via Police/Intelligence",
+    "Biometric photo standards compliance",
+    "Proof of payment (GRZ Receipt)",
+    "Dual citizenship status (if applicable)"
+  ],
+  "Sections": [
+    {
+      "Title": "Personal Details",
+      "Fields": [
+        { "Label": "Surname", "BindingProperty": "Surname", "Type": 0, "IsRequired": true },
+        { "Label": "First Names", "BindingProperty": "FirstNames", "Type": 0, "IsRequired": true },
+        { "Label": "Date of Birth", "BindingProperty": "DateOfBirth", "Type": 2, "IsRequired": true },
+        { "Label": "Place of Birth", "BindingProperty": "PlaceOfBirth", "Type": 0, "IsRequired": true },
+        { "Label": "District of Birth", "BindingProperty": "DistrictOfBirth", "Type": 0, "IsRequired": true },
+        { "Label": "Gender", "BindingProperty": "Gender", "Type": 3, "Options": ["Male", "Female"], "IsRequired": true },
+        { "Label": "Marital Status", "BindingProperty": "MaritalStatus", "Type": 3, "Options": ["Single", "Married", "Divorced", "Widowed"], "IsRequired": true },
+        { "Label": "NRC Number", "BindingProperty": "NRCNumber", "Type": 0, "IsRequired": true },
+        { "Label": "Profession/Occupation", "BindingProperty": "Profession", "Type": 0, "IsRequired": true }
+      ]
+    },
+    {
+      "Title": "Contact Information",
+      "Fields": [
+        { "Label": "Residential Address", "BindingProperty": "ResidentialAddress", "Type": 4, "IsRequired": true },
+        { "Label": "District", "BindingProperty": "District", "Type": 0, "IsRequired": true },
+        { "Label": "Province", "BindingProperty": "Province", "Type": 3, "Options": ["Central", "Copperbelt", "Eastern", "Luapula", "Lusaka", "Muchinga", "Northern", "North-Western", "Southern", "Western"], "IsRequired": true },
+        { "Label": "Phone Number", "BindingProperty": "PhoneNumber", "Type": 0, "IsRequired": true },
+        { "Label": "Email Address", "BindingProperty": "Email", "Type": 0, "IsRequired": false }
+      ]
+    },
+    {
+      "Title": "Parental Details",
+      "Fields": [
+        { "Label": "Father's Full Name", "BindingProperty": "FatherName", "Type": 0, "IsRequired": true },
+        { "Label": "Father's NRC (if Zambian)", "BindingProperty": "FatherNRC", "Type": 0, "IsRequired": false },
+        { "Label": "Father's Nationality", "BindingProperty": "FatherNationality", "Type": 0, "IsRequired": true },
+        { "Label": "Mother's Full Name", "BindingProperty": "MotherName", "Type": 0, "IsRequired": true },
+        { "Label": "Mother's NRC (if Zambian)", "BindingProperty": "MotherNRC", "Type": 0, "IsRequired": false },
+        { "Label": "Mother's Nationality", "BindingProperty": "MotherNationality", "Type": 0, "IsRequired": true }
+      ]
+    },
+    {
+      "Title": "Application Specifics",
+      "Fields": [
+        { "Label": "Passport Type", "BindingProperty": "PassportType", "Type": 3, "Options": ["Standard (32 Pages)", "Executive (48 Pages)", "Diplomatic"], "IsRequired": true },
+        { "Label": "Processing Priority", "BindingProperty": "ProcessingPriority", "Type": 3, "Options": ["Standard (21 Days)", "Express (7 Days)"], "IsRequired": true },
+        { "Label": "Collection Point", "BindingProperty": "CollectionPoint", "Type": 0, "IsRequired": true }
+      ]
+    }
+  ]
+}
